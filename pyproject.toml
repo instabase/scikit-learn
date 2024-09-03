@@ -1,7 +1,8 @@
 [build-system]
 # Minimum requirements for the build system to execute.
 requires = [
-    "setuptools",
+    # pinning setuptools https://instabase.slack.com/archives/CCY413CSU/p1724808224251339?thread_ts=1724790820.987119&cid=CCY413CSU
+    "setuptools==73.0.1",
     "wheel",
     "Cython>=0.28.5, <3.0.0",
     "numpy==1.13.3; python_version=='3.6' and platform_system!='AIX' and platform_python_implementation == 'CPython'",
